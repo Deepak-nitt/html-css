@@ -5,10 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div>
-        <h1>Hello Wolrd</h1>
-    </div>
+<style>
     
+    body{
+        height: 900px;
+        width: 1100px;
+    }
+    .class-container{
+        justify-content: center;
+        height: 900px;
+    }
+    .navbar{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        height: 100px;
+        width: 1100px;
+        background-color: black;
+        border-radius: 10px;
+    
+    }
+    .right{
+        display: flex;
+        margin-left: 100px;
+        justify-content: space-between;
+    }
+    #navi{
+        justify-content: space-between;
+        margin-left: 10px;
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    #image-google-one{
+        height: 100px;
+        width:100px;
+        padding:30px;
+        justify-content: center;
+        align-items: flex-start;
+        
+        
+    }
+     #image-google-two{
+        height: 300px;
+        width:300px;
+        padding:30px;
+        justify-content: center;
+        align-items: flex-start;
+        
+        
+    }
+    .hero-section{
+        height: 500px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 300px;
+        padding: 100px;
+        margin-top: 100px;
+        background-color: rgb(189, 223, 223);
+        border-radius: 20px;
+        margin-left: 300px;
+    }
+
+    .footer{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 100px;
+        background-color: black;
+        height: 100px;
+        color: white;
+    }
+
+    #footer-id{
+        background-color: black;
+    }
+    .buy{
+        color: black;
+        background-color: blue;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+    }
+    .feature-list{
+        background-color: rgb(189, 223, 223);;
+    }
+</style>
+<body>
+    <div class="class-container">
+        <div class="navbar">
+           <div class="left">
+            <img id="image-google-one" src="google.png" alt="">
+           </div>
+           <div class="right">
+            <a id="navi" href="/home">Home</a>
+            <a  id="navi" href="/features">Features</a>
+            <a  id="navi" href="/buy">Buy</a>
+           </div>
+        </div>
+
+        <div class="hero-section">
+            <img id="image-google-two" src="google.png" alt="image of product">
+            <h1>Headline</h1>
+            <div class="feature-list">
+                <li>Keep water cold for 24 h</li>
+                <li>BPA-free</li>
+                <li>Blootooth hydration tracking</li>
+            </div>
+            <button class="buy" type="button">Buy Now</button>
+        </div>
+        
+    </div>
+   <footer class=" footer">
+    <div id="footer-id">
+        Copyright @2025
+    </div>
+
+   </footer>
+    
+
 </body>
 </html>
